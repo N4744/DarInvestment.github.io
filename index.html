@@ -1,127 +1,92 @@
 <!DOCTYPE html>
 <html lang="ar" dir="rtl">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>دار الاستثمار</title>
-
-<style>
-    body {
-        font-family: "Tajawal", sans-serif;
-        background: #2b0f24;
-        margin: 0;
-        padding: 0;
-        text-align: center;
-        color: #fff;
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>دار الاستثمار</title>
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    :root{
+      --bg:#0b0710;
+      --panel:#1a0f15;
+      --neon:#f6d365;
+      --accent1:#ff9a9e;
+      --accent2:#f6d365;
+      --price:#18e071;
     }
-
-    h1 {
-        color: #ffb7df;
-        margin-top: 30px;
-        font-size: 32px;
+    *{box-sizing:border-box}
+    body{
+      margin:0;
+      font-family: 'Cairo', sans-serif;
+      background: var(--bg);
+      color:#f7e9f2;
+      padding:20px;
+      direction:rtl;
     }
-
-    .container {
-        width: 92%;
-        max-width: 900px;
-        margin: 20px auto;
+    .container{max-width:900px;margin:auto;}
+    header{text-align:center;margin-bottom:25px;}
+    header h1{
+      background:linear-gradient(90deg,var(--accent1),var(--accent2));
+      -webkit-background-clip:text;
+      color:transparent;
+      font-size:28px;
     }
-
-    .box {
-        background: #2b0f24;
-        border-radius: 18px;
-        padding: 20px;
-        margin-bottom: 18px;
-        border: 3px solid #f7d94c;
-        box-shadow: 0 0 12px rgba(255, 240, 150, 0.4);
+    .intro, .card{
+      background:#1a0f15;
+      padding:18px;
+      border-radius:16px;
+      margin-bottom:18px;
+      border:2px solid rgba(255,200,120,0.06);
     }
-
-    .box h2 {
-        color: #ffb7df;
-        margin-bottom: 12px;
-        font-size: 22px;
+    .title{font-size:20px;font-weight:700;color:#ffb6d6;margin-bottom:8px;}
+    .price{color:var(--price);font-weight:800;}
+    .big-button{
+      display:block;
+      background:linear-gradient(90deg,#ff9a9e,#f6d365);
+      color:#2b0b0b;
+      padding:14px;
+      border-radius:12px;
+      text-align:center;
+      text-decoration:none;
+      margin-top:10px;
+      font-weight:700;
     }
-
-    .desc {
-        color: #e7e7e7;
-        font-size: 15px;
-        margin-bottom: 12px;
-        line-height: 1.7;
-    }
-
-    .price {
-        font-size: 20px;
-        font-weight: bold;
-        color: #00ff6a;
-        margin-bottom: 14px;
-    }
-
-    .btn {
-        display: inline-block;
-        width: 85%;
-        background: linear-gradient(90deg, #ffb7df, #ff8e8e);
-        color: #000;
-        padding: 14px 25px;
-        border-radius: 14px;
-        font-size: 17px;
-        font-weight: bold;
-        text-decoration: none;
-        border: 2px solid #f7d94c;
-        transition: 0.3s;
-    }
-
-    .btn:hover {
-        opacity: 0.8;
-    }
-</style>
+  </style>
 </head>
-
 <body>
+  <div class="container">
 
-<h1>دار الاستثمار</h1>
+    <header><h1>دار الاستثمار</h1></header>
 
-<div class="container">
+    <section class="intro">
+      <div class="title">مسارك نحو دخل واستثمار ناجح</div>
+      <p>اليوم... مو بُكرة! كل فرصة ما تستغلها الآن، تُروّج على غيرك...</p>
+    </section>
 
-    <div class="box">
-        <h2>مسارك نحو دخل واستثمار ناجح</h2>
-        <p class="desc">
-            اليوم… مو بكرة! كل فرصة ما تستغليها الآن، بترجع على غيرك. النجاح هو صدفة، النجاح قرار.
-            انتي الآن قدام خطوة تغيّر دخلك وتفتح لك طريق جديد كله قوة ووعي.  
-            لا تنتظري الظروف… كوني أنتِ التغيير.  
-            هذا المسار هو الباب… والقرار قرارك.
-        </p>
-    </div>
+    <article class="card">
+      <div class="title">شراء قرض تداول <span class="price">$49</span></div>
+      <p>قرض شامل يعلمك أساسيات التداول...</p>
+      <a class="big-button" href="#">شراء الآن</a>
+    </article>
 
-    <div class="box">
-        <h2>شراء قرص تداول</h2>
-        <p class="desc">قرص شامل يعلمك أساسيات التداول بخطوات بسيطة وواضحة يناسب المبتدئين تماماً.</p>
-        <p class="price">$49</p>
-        <a class="btn" href="#">شراء الآن</a>
-    </div>
+    <article class="card">
+      <div class="title">شراء استشارة شخصية <span class="price">$100</span></div>
+      <p>جلسة خاصة توجهك ماديًا...</p>
+      <a class="big-button" href="#">احجز الآن</a>
+    </article>
 
-    <div class="box">
-        <h2>شراء استشارة شخصية</h2>
-        <p class="desc">جلسة خاصة توجهك مادياً، وتحدد لك الطريق الصحيح حسب وضعك الحالي وأهدافك.</p>
-        <p class="price">$100</p>
-        <a class="btn" href="#">احجز الآن</a>
-    </div>
+    <article class="card">
+      <div class="title">شراء 5 استراتيجيات ذهبية <span class="price">$19</span></div>
+      <p>استراتيجيات جاهزة وسهلة التطبيق...</p>
+      <a class="big-button" href="#">شراء الآن</a>
+    </article>
 
-    <div class="box">
-        <h2>شراء 5 استراتيجيات ذهبية</h2>
-        <p class="desc">استراتيجيات جاهزة وسهلة التطبيق ترفع من فرص ربحك وتقلل المخاطر.</p>
-        <p class="price">$19</p>
-        <a class="btn" href="#">شراء الآن</a>
-    </div>
+    <article class="card">
+      <div class="title">شراء نسخ صفقات تحقق لك دخل شهري <span class="price">$500</span></div>
+      <p>النسخ يعمل تلقائيًا...</p>
+      <a class="big-button" href="#">اشتر الآن</a>
+    </article>
 
-    <div class="box">
-        <h2>شراء نسخ صفقات</h2>
-        <p class="desc">شراء نسخ صفقات تحقق لك دخل شهري $2000  
-        أنت فقط تراقبين… النسخ يعمل تلقائياً، والأرباح توصلك بدون أي جهد.</p>
-        <p class="price">$500</p>
-        <a class="btn" href="#">اشتر الآن</a>
-    </div>
-
-</div>
-
+  </div>
 </body>
 </html>
