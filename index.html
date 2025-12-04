@@ -1,10 +1,13 @@
+<!-- دار الاستثمار - النسخة المنسّقة بعرض أكبر ومسافات أصغر -->
 <!DOCTYPE html>
 <html lang="ar" dir="rtl">
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>دار الاستثمار</title>
+
   <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+
   <style>
     :root{
       --bg:#0b0710;
@@ -14,32 +17,73 @@
       --accent2:#f6d365;
       --price:#18e071;
     }
+
     *{box-sizing:border-box}
+
     body{
       margin:0;
-      font-family: 'Cairo', sans-serif;
-      background: var(--bg);
+      font-family:'Cairo',sans-serif;
+      background:var(--bg);
       color:#f7e9f2;
       padding:20px;
       direction:rtl;
     }
-    .container{max-width:900px;margin:auto;}
-    header{text-align:center;margin-bottom:25px;}
+
+    .container{
+      max-width:700px;
+      margin:auto;
+    }
+
+    header{
+      text-align:center;
+      margin-bottom:25px;
+    }
+
     header h1{
-      background:linear-gradient(90deg,var(--accent1),var(--accent2));
-      -webkit-background-clip:text;
-      color:transparent;
-      font-size:28px;
+      font-size:26px;
+      padding:12px 20px;
+      border:2px solid #ff9a9e;
+      width:max-content;
+      margin:auto;
+      border-radius:14px;
+      background:rgba(255,154,158,0.1);
+      backdrop-filter:blur(4px);
     }
-    .intro, .card{
+
+    /* البطاقة */
+    .card{
       background:#1a0f15;
-      padding:18px;
+      padding:22px;
       border-radius:16px;
-      margin-bottom:18px;
-      border:2px solid rgba(255,200,120,0.06);
+      margin:20px auto;
+      border:2px solid rgba(255,200,120,0.08);
+      width:95%;
     }
-    .title{font-size:20px;font-weight:700;color:#ffb6d6;margin-bottom:8px;}
-    .price{color:var(--price);font-weight:800;}
+
+    .price{
+      color:var(--price);
+      font-weight:800;
+      display:block;
+      margin-bottom:6px;
+      font-size:18px;
+      text-align:left;
+    }
+
+    .title{
+      font-size:20px;
+      font-weight:700;
+      color:#ffb6d6;
+      margin-bottom:8px;
+      text-align:center;
+    }
+
+    .card p{
+      font-size:16px;
+      line-height:1.6;
+      text-align:center;
+      margin:0 0 12px;
+    }
+
     .big-button{
       display:block;
       background:linear-gradient(90deg,#ff9a9e,#f6d365);
@@ -48,43 +92,47 @@
       border-radius:12px;
       text-align:center;
       text-decoration:none;
-      margin-top:10px;
       font-weight:700;
+      font-size:17px;
     }
   </style>
 </head>
+
 <body>
   <div class="container">
 
     <header><h1>دار الاستثمار</h1></header>
 
-    <section class="intro">
-      <div class="title">مسارك نحو دخل واستثمار ناجح</div>
-      <p>اليوم... مو بُكرة! كل فرصة ما تستغلها الآن، تُروّج على غيرك...</p>
-    </section>
-
+    <!-- 500$ -->
     <article class="card">
-      <div class="title">شراء قرض تداول <span class="price">$49</span></div>
-      <p>قرض شامل يعلمك أساسيات التداول...</p>
-      <a class="big-button" href="#">شراء الآن</a>
+      <span class="price">$500</span>
+      <div class="title">نسخ صفقات تحقق دخل شهري</div>
+      <p>نظام نسخ صفقات جاهز يشتغل تلقائي ويعطيك أفضل فرص الربح شهر بعد شهر.</p>
+      <a class="big-button">اشتري الآن</a>
     </article>
 
+    <!-- 100$ -->
     <article class="card">
-      <div class="title">شراء استشارة شخصية <span class="price">$100</span></div>
-      <p>جلسة خاصة توجهك ماديًا...</p>
-      <a class="big-button" href="#">احجز الآن</a>
+      <span class="price">$100</span>
+      <div class="title">استشارة شخصية</div>
+      <p>جلسة خاصة توجهك ماليًا وتحدد لك الطريق الصحيح لبدء استثمار ناجح.</p>
+      <a class="big-button">اشتري الآن</a>
     </article>
 
+    <!-- 49$ -->
     <article class="card">
-      <div class="title">شراء 5 استراتيجيات ذهبية <span class="price">$19</span></div>
-      <p>استراتيجيات جاهزة وسهلة التطبيق...</p>
-      <a class="big-button" href="#">شراء الآن</a>
+      <span class="price">$49</span>
+      <div class="title">قرص التداول</div>
+      <p>قرص شامل يعلمك أساسيات التداول بخطوات بسيطة وواضحة.</p>
+      <a class="big-button">اشتري الآن</a>
     </article>
 
+    <!-- 19$ -->
     <article class="card">
-      <div class="title">شراء نسخ صفقات تحقق لك دخل شهري <span class="price">$500</span></div>
-      <p>النسخ يعمل تلقائيًا...</p>
-      <a class="big-button" href="#">اشتر الآن</a>
+      <span class="price">$19</span>
+      <div class="title">5 استراتيجيات ذهبية</div>
+      <p>خمس طرق جاهزة وسهلة التطبيق تساعدك تبدأ وتربح بأقل مجهود.</p>
+      <a class="big-button">اشتري الآن</a>
     </article>
 
   </div>
