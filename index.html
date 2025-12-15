@@ -1,179 +1,190 @@
 <!DOCTYPE html>
 <html lang="ar" dir="rtl">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>دار الاستثمار</title>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Private Access</title>
 
-  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700&display=swap" rel="stylesheet">
 
-  <style>
-    :root{
-      --bg:#0b0710;
-      --panel:#1a0f15;
-      --accent1:#ff9a9e;
-      --accent2:#f6d365;
-      --price:#18e071;
-    }
+<style>
+:root{
+  --bg:#0b0710;
+  --card:#12080d;
+  --accent:#f6d365;
+  --accent2:#ff9a9e;
+  --telegram:#1f8fbf; /* لون هادئ للتليجرام */
+}
 
-    *{box-sizing:border-box}
+*{box-sizing:border-box}
 
-    body{
-      margin:0;
-      font-family:'Cairo',sans-serif;
-      background:var(--bg);
-      color:#f7e9f2;
-      padding:20px;
-      direction:rtl;
-    }
+body{
+  margin:0;
+  font-family:'Cairo',sans-serif;
+  background:var(--bg);
+  color:#f7e9f2;
+  padding:3px;
+}
 
-    .container{
-      max-width:700px;
-      margin:auto;
-    }
+.container{
+  max-width:400px;
+  margin:auto;
+}
 
-    header{
-      text-align:center;
-      margin-bottom:25px;
-    }
+.hero{
+  text-align:center;
+  padding:10px;
+  margin:6px 0 8px;
+  border-radius:8px;
+  background:linear-gradient(135deg,rgba(255,154,158,.18),rgba(246,211,101,.18));
+}
 
-    header h1{
-      font-size:26px;
-      padding:12px 20px;
-      border:2px solid #ff9a9e;
-      width:max-content;
-      margin:auto;
-      border-radius:14px;
-      background:rgba(255,154,158,0.1);
-    }
+.hero h2{
+  font-size:13px;
+  margin:0 0 5px;
+}
 
-    /* قسم البداية */
-    .hero{
-      text-align:center;
-      margin:30px auto;
-      padding:25px;
-      border-radius:18px;
-      background:linear-gradient(135deg,rgba(255,154,158,0.12),rgba(246,211,101,0.12));
-      border:2px solid rgba(255,200,120,0.15);
-    }
+.hero p{
+  font-size:12px;
+  margin:0 0 7px;
+  line-height:1.55;
+}
 
-    .hero h2{
-      font-size:22px;
-      margin-bottom:10px;
-      color:#ffd1e8;
-    }
+.hero .main-btn{
+  font-size:11px;
+  padding:6px 12px;
+  border-radius:16px;
+  background:linear-gradient(90deg,var(--accent2),var(--accent));
+  color:#2b0b0b;
+  font-weight:700;
+  text-decoration:none;
+  display:block;
+  margin-bottom:6px;
+}
 
-    .hero p{
-      font-size:16px;
-      margin-bottom:18px;
-    }
+.hero .telegram-btn{
+  display:block;
+  background:var(--telegram);
+  color:#fff;
+  font-size:10.8px;
+  padding:6px;
+  border-radius:6px;
+  text-align:center;
+  text-decoration:none;
+  font-weight:600;
+  opacity:.9;
+}
 
-    .hero a{
-      display:inline-block;
-      background:linear-gradient(90deg,#ff9a9e,#f6d365);
-      color:#2b0b0b;
-      padding:14px 28px;
-      border-radius:30px;
-      text-decoration:none;
-      font-weight:800;
-      font-size:17px;
-    }
+.card{
+  background:var(--card);
+  padding:7px;
+  margin-bottom:6px;
+  border-radius:8px;
+  border:1px solid rgba(255,255,255,.05);
+}
 
-    /* البطاقة */
-    .card{
-      background:#1a0f15;
-      padding:22px;
-      border-radius:16px;
-      margin:20px auto;
-      border:2px solid rgba(255,200,120,0.08);
-      width:95%;
-    }
+.title{
+  font-size:12px;
+  font-weight:700;
+  text-align:center;
+  margin:2px 0 4px;
+  color:#ffb6d6;
+}
 
-    .price{
-      color:var(--price);
-      font-weight:800;
-      display:block;
-      margin-bottom:6px;
-      font-size:18px;
-      text-align:left;
-    }
+.card p{
+  font-size:11px;
+  text-align:center;
+  margin:0 0 6px;
+  line-height:1.45;
+}
 
-    .title{
-      font-size:20px;
-      font-weight:700;
-      color:#ffb6d6;
-      margin-bottom:8px;
-      text-align:center;
-    }
+.scarcity{
+  font-size:10.5px;
+  opacity:.85;
+  text-align:center;
+  margin-top:6px;
+}
 
-    .card p{
-      font-size:16px;
-      line-height:1.6;
-      text-align:center;
-      margin:0 0 12px;
-    }
-
-    .big-button{
-      display:block;
-      background:linear-gradient(90deg,#ff9a9e,#f6d365);
-      color:#2b0b0b;
-      padding:14px;
-      border-radius:12px;
-      text-align:center;
-      text-decoration:none;
-      font-weight:700;
-      font-size:17px;
-    }
-  </style>
+.big-button{
+  font-size:11px;
+  padding:6px;
+  border-radius:6px;
+  background:linear-gradient(90deg,var(--accent2),var(--accent));
+  color:#2b0b0b;
+  font-weight:700;
+  text-align:center;
+  text-decoration:none;
+  display:block;
+}
+</style>
 </head>
 
 <body>
-  <div class="container">
+<div class="container">
 
-    <header><h1>دار الاستثمار</h1></header>
+<section class="hero">
+<h2>مسار استثماري بمعايير خاصة</h2>
+<p>
+تجربة تداول راقية مخصّصة لمن يقدّر الهدوء، الانضباط، واختيار الفرص بعناية.<br>
+قرارات محسوبة، تنفيذ هادئ، وبيئة مصمّمة للي يعرف قيمة وقته.
+</p>
 
-    <!-- بداية الصفحة -->
-    <section class="hero">
-      <h2>🚀 ابدئي الربح الآن مع Pocket Option</h2>
-      <p>منصة قوية | فرص يومية | دخول سهل<br>لا تضيعين الفرصة 👇</p>
-      <a href="https://pocket-friends.co/r/9yper9qh6i" target="_blank">
-        ابدئي رحلتك الآن
-      </a>
-    </section>
+<a class="main-btn" href="https://pocket-friends.co/r/9yper9qh6i" target="_blank">
+ابدئي رحلتك الآن
+</a>
 
-    <!-- 500$ -->
-    <article class="card">
-      <span class="price">$500</span>
-      <div class="title">نسخ صفقات تحقق دخل شهري</div>
-      <p>نظام نسخ صفقات جاهز يشتغل تلقائي ويعطيك أفضل فرص الربح شهر بعد شهر.</p>
-      <a class="big-button" href="https://pocket-friends.co/r/9yper9qh6i" target="_blank">اشتري الآن</a>
-    </article>
+<a class="telegram-btn" href="https://t.me/n_or1995" target="_blank">
+تواصل عبر تيليجرام
+</a>
+</section>
 
-    <!-- 100$ -->
-    <article class="card">
-      <span class="price">$100</span>
-      <div class="title">استشارة شخصية</div>
-      <p>جلسة خاصة توجهك ماليًا وتحدد لك الطريق الصحيح لبدء استثمار ناجح.</p>
-      <a class="big-button" href="https://pocket-friends.co/r/9yper9qh6i" target="_blank">اشتري الآن</a>
-    </article>
+<div class="card">
+<div class="title">نسخ صفقات — $500</div>
+<p>
+مسار احترافي مبني على انضباط السوق،<br>
+يهدف إلى استقرار الأداء لا كثرة الصفقات.
+</p>
+<a class="big-button" href="https://pocket-friends.co/r/9yper9qh6i" target="_blank">
+طلب الوصول • $500
+</a>
+</div>
 
-    <!-- 49$ -->
-    <article class="card">
-      <span class="price">$49</span>
-      <div class="title">قرص التداول</div>
-      <p>قرص شامل يعلمك أساسيات التداول بخطوات بسيطة وواضحة.</p>
-      <a class="big-button" href="https://pocket-friends.co/r/9yper9qh6i" target="_blank">اشتري الآن</a>
-    </article>
+<div class="card">
+<div class="title">استشارة شخصية — $100</div>
+<p>
+جلسة خاصة لترتيب الرؤية الاستثمارية،<br>
+ووضع خطة تناسب أهدافك ومستوى مخاطرتك.
+</p>
+<a class="big-button" href="https://pocket-friends.co/r/9yper9qh6i" target="_blank">
+حجز خاص • $100
+</a>
+</div>
 
-    <!-- 19$ -->
-    <article class="card">
-      <span class="price">$19</span>
-      <div class="title">5 استراتيجيات ذهبية</div>
-      <p>خمس طرق جاهزة وسهلة التطبيق تساعدك تبدأ وتربح بأقل مجهود.</p>
-      <a class="big-button" href="https://pocket-friends.co/r/9yper9qh6i" target="_blank">اشتري الآن</a>
-    </article>
+<div class="card">
+<div class="title">قرص التداول — $49</div>
+<p>
+محتوى تعليمي هادئ وعميق،<br>
+مصمّم لبناء فهم حقيقي للسوق.
+</p>
+<a class="big-button" href="https://pocket-friends.co/r/9yper9qh6i" target="_blank">
+الوصول • $49
+</a>
+<div class="scarcity">
+الوصول يتم قبوله بشكل محدود حفاظًا على جودة التجربة.
+</div>
+</div>
 
-  </div>
+<div class="card">
+<div class="title">5 استراتيجيات — $19</div>
+<p>
+خطط عملية مختارة،<br>
+لبداية ذكية دون تعقيد.
+</p>
+<a class="big-button" href="https://pocket-friends.co/r/9yper9qh6i" target="_blank">
+الدخول • $19
+</a>
+</div>
+
+</div>
 </body>
 </html>
-
